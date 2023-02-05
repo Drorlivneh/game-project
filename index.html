@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  <!-- Score
+  Rules
+
+  You Picked
+  The House Picked
+
+  You Win
+  You Lose
+
+  Play Again -->
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div id="general-div">
+    <div id="upper-div">
+      <div id="game-title">
+        <div class="title-word">
+          ROCK
+        </div>
+        <div class="title-word">
+          PAPER
+        </div>
+        <div class="title-word">
+          SCISSORS
+        </div>
+      </div>
+      <div id="score-board">
+        <div id="board-title">Scores
+
+        </div>
+        <div id="points-number">
+
+        </div>
+      </div>
+    </div>
+      <div  id="middle-div">
+        <div id="middle-div-step-one">
+          <div id="two-circles">
+            <div id="scissors" class="button">
+              <img src="./images/icon-scissors.svg">
+            </div>
+            <div id="paper" class="button">
+              <img src="./images/icon-paper.svg">
+            </div>
+          </div>
+      <div id="one-circle">
+        <div id="rock" class="button">
+          <img src="./images/icon-rock.svg">
+        </div>
+      </div>
+    </div>
+  </div>
+    <div  id="lower-div">
+      <div onclick="rulesModal()" id="rules">
+        rules
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Dror livneh</a>.
+    </div>
+
+    
+    
+</div>
+<script src="/projects/game-project/main.js"></script>
+
+</body>
+</html>
