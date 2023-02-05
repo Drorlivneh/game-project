@@ -2,13 +2,8 @@
 function ReturnToStepOne(){
     let middleDivStepTwo = document.getElementById('middle-div-step-two') as HTMLDivElement | null;
     middleDivStepTwo?.remove();
-    // middleDivStepTwo.style.display = 'none';
-    // middleDivStepTwo?.innerHTML = '';
-    // map.remove();
-    
     stepOne.style.display = 'block';
 }
-
 let scores:number = 0;
 let pointNumber = document.getElementById('points-number') as HTMLDivElement | null;
 let stepOne = document.getElementById('middle-div-step-one') as HTMLDivElement | null;
@@ -34,7 +29,6 @@ rock.addEventListener('click', function(e){
         const myTimeout = setTimeout(ReturnToStepOne, 1000);
     }
 })
-
 let paper = document.getElementById('paper') as HTMLDivElement | null;
 paper.addEventListener('click', function(e){
     e.preventDefault();
@@ -46,11 +40,6 @@ paper.addEventListener('click', function(e){
         const myTimeout = setTimeout(ReturnToStepOne, 1000);
     }
 })
-
-
-
-
-
 function presentStepTwo(yourChoise:HTMLDivElement | null){
     // let yourChoiceSvg:string;
     // if(yourChoise===scissors){
@@ -99,13 +88,7 @@ function presentStepTwo(yourChoise:HTMLDivElement | null){
            break; 
         } 
      } 
-    // if(yourChoise===scissors){
-    //     youPickedLogo.style.borderColor = 'rgb(255, 170, 0)';
-    //     youPickedLogo.style.borderColor = 'hsl(230, 89%, 62%)';
-    //     youPickedLogo.style.borderColor = 'hsl(349, 71%, 52%)';
-    //     // youPickedLogo.src = './images/icon-scissors.svg'
-    //     // youPickedLogo.innerHTML = `<${yourChoice}>`
-    // }
+    
     let theHousePickedLogo = document.createElement("img") as HTMLElement;
     theHousePickedLogo.className = 'button-step-two';
     let computerChoice:number = Math.round(Math.random() * (3 - 1) + 1);

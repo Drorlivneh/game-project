@@ -1,9 +1,6 @@
 function ReturnToStepOne() {
     var middleDivStepTwo = document.getElementById('middle-div-step-two');
     middleDivStepTwo === null || middleDivStepTwo === void 0 ? void 0 : middleDivStepTwo.remove();
-    // middleDivStepTwo.style.display = 'none';
-    // middleDivStepTwo?.innerHTML = '';
-    // map.remove();
     stepOne.style.display = 'block';
 }
 var scores = 0;
@@ -86,13 +83,6 @@ function presentStepTwo(yourChoise) {
             break;
         }
     }
-    // if(yourChoise===scissors){
-    //     youPickedLogo.style.borderColor = 'rgb(255, 170, 0)';
-    //     youPickedLogo.style.borderColor = 'hsl(230, 89%, 62%)';
-    //     youPickedLogo.style.borderColor = 'hsl(349, 71%, 52%)';
-    //     // youPickedLogo.src = './images/icon-scissors.svg'
-    //     // youPickedLogo.innerHTML = `<${yourChoice}>`
-    // }
     var theHousePickedLogo = document.createElement("img");
     theHousePickedLogo.className = 'button-step-two';
     var computerChoice = Math.round(Math.random() * (3 - 1) + 1);
